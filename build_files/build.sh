@@ -11,10 +11,15 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 dnf5 install -y tmux 
-dnf5 install -y fastfetch
+dnf5 remove -y fastfetch
 dnf5 install -y ptyxis
-dnf5 install -y nautilus
+dnf5 remove -y nautilus
 dnf5 remove -y konsole
+dnf5 remove -y firefox
+dnf install brave-origin
+
+
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
