@@ -16,7 +16,7 @@ dnf5 install -y ptyxis
 dnf5 remove -y nautilus
 dnf5 remove -y konsole
 dnf5 remove -y firefox
-dnf install brave-origin
+dnf install -y brave-origin
 
 
 
