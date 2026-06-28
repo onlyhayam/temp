@@ -16,9 +16,12 @@ dnf5 install -y ptyxis
 dnf5 remove -y nautilus
 dnf5 remove -y konsole
 dnf5 remove -y firefox
-dnf install dnf-plugins-core
-dnf config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-dnf install brave-origin
+
+ dnf install dnf-plugins-core
+
+ dnf -y config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+
+ dnf install -y brave-origin
 
 
 # Use a COPR Example:
