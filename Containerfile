@@ -3,7 +3,7 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM ghcr.io/secureblue/kinoite-main-hardened:latest
+FROM quay.io/fedora-ostree-desktops/kinoite
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
