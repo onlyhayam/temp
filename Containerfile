@@ -3,7 +3,8 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM quay.io/fedora-ostree-desktops/kinoite
+FROM quay.io/fedora-ostree-desktops/silverblue:latest
+
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
