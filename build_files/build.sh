@@ -28,7 +28,7 @@ dnf5 -y config-manager addrepo --from-repofile=https://brave-browser-rpm-release
 
 dnf5 -y install brave-origin
 
-
+ dnf5 remove brave-browser
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
