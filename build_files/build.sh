@@ -30,6 +30,7 @@ dnf5 -y install brave-origin
 
 rm -rf /usr/etc/yum.repos.d/brave-browser.repo
 
+flatpak remote-add -y --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install -y flathub io.github.kolunmi.Bazaar
 # Use a COPR Example:
 #
@@ -37,6 +38,7 @@ flatpak install -y flathub io.github.kolunmi.Bazaar
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
+
 
 #### Example for enabling a System Unit File
 
