@@ -11,10 +11,10 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 dnf5 install -y tmux 
-dnf5 remove -y fastfetch
+
 dnf5 install -y ptyxis
-dnf5 remove -y nautilus
-dnf5 remove -y konsole
+
+
 dnf5 remove -y firefox
 
 # Clean up brave directory before installation
