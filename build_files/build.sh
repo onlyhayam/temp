@@ -30,7 +30,7 @@ dnf5 -y install brave-origin
 
 rm -rf /usr/etc/yum.repos.d/brave-browser.repo
 
-flatpak install flathub io.github.kolunmi.Bazaar
+flatpak install -y flathub io.github.kolunmi.Bazaar
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
