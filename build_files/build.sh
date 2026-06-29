@@ -30,7 +30,7 @@ dnf5 -y install brave-origin
 
 rm -rf /usr/etc/yum.repos.d/brave-browser.repo
 
-flatpak remote-add -y --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install -y flathub io.github.kolunmi.Bazaar
 # Use a COPR Example:
 #
