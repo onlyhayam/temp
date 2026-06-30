@@ -23,8 +23,6 @@ FROM quay.io/fedora/fedora-silverblue:latest
 ## Uncomment the following line if one desires to make /opt immutable and be able to be used
 ## by the package manager.
 
- RUN rm /opt && mkdir /opt
-
 ### MODIFICATIONS
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
