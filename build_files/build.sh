@@ -18,9 +18,6 @@ dnf5 install -y ptyxis
 dnf5 remove -y firefox
 
 # Clean up brave directory before installation
-if [ -d /opt/brave.com ]; then
-  rm -rf /opt/brave.com/
-fi
 
 dnf5 -y install dnf-plugins-core
 
