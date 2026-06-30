@@ -13,14 +13,14 @@ set -ouex pipefail
 
 dnf5 install -y ptyxis
 dnf5 remove -y firefox
-# dnf5 -y install dnf-plugins-core
 
-#dnf5 -y config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+dnf5 -y install dnf-plugins-core
 
-#dnf5 -y install brave-origin
+dnf5 -y config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
 
-ls /opt/brave.com
-#rm -rf /usr/etc/yum.repos.d/brave-browser.repo
+dnf5 -y install brave-origin
+
+ rm -rf /usr/etc/yum.repos.d/brave-browser.repo
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install -y flathub io.github.kolunmi.Bazaar
@@ -34,4 +34,3 @@ flatpak install -y flathub io.github.kolunmi.Bazaar
 
 #### Example for enabling a System Unit File
 
-systemctl enable podman.socket
